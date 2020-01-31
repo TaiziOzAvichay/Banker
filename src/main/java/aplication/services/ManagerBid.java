@@ -45,7 +45,7 @@ public class ManagerBid {
     public Boolean updateBid(@NotNull String bidId, @NotNull Bid.Status status)
     {
         Bid bid = bidRepository.findById(bidId).orElse(null);
-        if (bid == null) return false;
+        if (bid == null || Bid.Status.UNKNOWN == status) return false;
         if(status == Bid.Status.LOSE){
             long budget = hashMapCampaign.get(bid.getCampaignId()) + bid.getCost();
             hashMapCampaign.put(bid.getCampaignId(),budget);
