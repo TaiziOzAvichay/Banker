@@ -58,6 +58,7 @@ public class ManagerBid {
 
         bidRepository.save(bid);
 
+
         return  true;
     }
 }
