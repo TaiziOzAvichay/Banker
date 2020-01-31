@@ -15,7 +15,7 @@ public class ScheduledAnnotation {
         this.managerCampaign = managerCampaign;
     }
 
-    @Scheduled(fixedDelay = 20, initialDelay = 40)
+    @Scheduled(fixedDelay = 2000, initialDelay = 4000)
     public void scheduleFixedRateWithInitialDelayTask() {
         logger.info("started scheduleFixedRateWithInitialDelayTask");
         final int money = 500;
