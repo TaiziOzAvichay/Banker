@@ -24,7 +24,6 @@ public class RedisConfig {
     RedisTemplate< String, Object > redisTemplate() {
         final RedisTemplate< String, Object > template =  new RedisTemplate< String, Object >();
         template.setConnectionFactory( jedisConnectionFactory() );
-        //template.setKeySerializer( new StringRedisSerializer() );
         template.setValueSerializer( new GenericToStringSerializer< Object >( Object.class ) );
         template.setKeySerializer( new GenericToStringSerializer< Object >( Object.class ) );
 
