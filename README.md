@@ -36,7 +36,9 @@ the second api is to get the answer of the result of bid
 
 @PostMapping("/bid/{id}/{status}")
 
-post request get id bit and status (WIN,LOSE)
+post request get  bit id and status (WIN,LOSE)
+and update accordingly the server budget
+and bid status in redis
 
 
 
