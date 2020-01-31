@@ -1,6 +1,6 @@
 # Banker
 
-so defualt Campaigns will upload in setup via getCampaigns (bean) function .
+the defualt Campaigns will upload in setup via getCampaigns (bean) function .
 getCampaigns return hashmap of key,value  
 key is type long that represent id of Campaign
 value is type long that represent money of Campaign
