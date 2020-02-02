@@ -1,20 +1,19 @@
 # Banker
 
-the defualt Campaigns will upload in setup via getCampaigns (bean) function .
-getCampaigns return hashmap of key,value  
-key is type long that represent id of Campaign
+General information
+
+The defualt campaigns will upload in setup via getCampaigns (bean) function .
+getCampaigns function return hashmap of key,value. 
+Key is type long that represent id of Campaign
 value is type long that represent money of Campaign
-
-the data can change only via DataCampaignsConfig class
-
-redis db use in port 6379 and host localhost
-
-can change via application property
+The data can change only via DataCampaignsConfig class.
+Redis db use in port 6379 and host localhost.
+You can change those properties via application properties.
 
 spring.redis.host=localhost
 spring.redis.port=6379
 
-like we say there is two api :
+Api information :
 
 @PostMapping("/bid")
 public Boolean newBid(@RequestBody Bid newBid)
