@@ -27,11 +27,18 @@ like
 	"cost":2
 }
 
-this api check if there is enough  money in server memory 
-if there is money 
-insert bid object to redis and remove money from the server
+This api 
+tell  the  service  participating  in  the auction  
+if  the  campaign  he’s  looking  to  bid  for  
+has  enough  money  to  participate  in  an  auction,
+and  reduce  money  in  case  a  bid  happen. 
+This function return Boolean if bid happen or not.
 
-the second api is to get the answer of the result of bid
+The second api informa the server if you
+Win or lose the bid and update the 
+server budget.
+
+This function return Boolean if the bid update or not.
 
 @PostMapping("/bid/{id}/{status}")
 
